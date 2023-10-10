@@ -43,6 +43,8 @@ public struct EditMenuView<Content: View>: UIViewControllerRepresentable {
 
             items[index].action()
         }
+
+        hostVC.view.backgroundColor = .clear
         
         coordinator.responder = hostVC
         
